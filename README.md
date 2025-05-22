@@ -9,4 +9,4 @@ https://cse341-project2-fi1e.onrender.com
 YouTube
 week1: https://youtu.be/ozs-mzvpnAQ
 week2: https://youtu.be/rTFuOc6wHik
-week3: 
+week3: https://youtu.be/TrVFb4NGQy8
