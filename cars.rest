@@ -1,0 +1,31 @@
+### get car all data
+GET http://localhost:8080/cars
+
+### get car data with id
+GET http://localhost:8080/cars/682ec3551af3761770b32534
+
+
+### create a new car
+POST http://localhost:8080/cars
+Content-Type: application/json
+
+{
+  "name": "Livina",
+  "color": "red",
+  "brand": "nissan",
+  "production_year": 2000
+}
+
+### update a car by ID
+PUT http://localhost:8080/cars/682ec3551af3761770b32534
+Content-Type: application/json
+
+{
+  "name": "Livina",
+  "color": "red",
+  "brand": "nissan",
+  "production_year": 2005
+}
+
+### delete a car by ID
+DELETE http://localhost:8080/cars/682ec3551af3761770b32534
