@@ -1,11 +1,12 @@
 # cse341
 
 GitHub link
-https://github.com/learnercora/cse341
+https://github.com/learnercora/cse341-project2
 
 Render
-https://cse341-s8ph.onrender.com
+https://cse341-project2-fi1e.onrender.com
 
 YouTube
 week1: https://youtu.be/ozs-mzvpnAQ
 week2: https://youtu.be/rTFuOc6wHik
+week3: 

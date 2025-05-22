@@ -4,14 +4,31 @@ const router = express.Router();
 const carsController = require('../controllers/cars');
 const validation = require('../middleware/validate');
 
-router.get('/', carsController.getAllCars);
+router.get('/',
+  // #swagger.tags = ['Cars']
+  carsController.getAllCars
+);
 
-router.get('/:id', carsController.getSingleCar);
+router.get('/:id',
+  // #swagger.tags = ['Cars']
+  carsController.getSingleCar
+);
 
-router.post('/', validation.saveCar, carsController.createCar);
+router.post('/',
+  // #swagger.tags = ['Cars']
+  validation.saveCar,
+  carsController.createCar
+);
 
-router.put('/:id', validation.saveCar, carsController.updateCar);
+router.put('/:id',
+  // #swagger.tags = ['Cars']
+  validation.saveCar,
+  carsController.updateCar
+);
 
-router.delete('/:id', carsController.deleteCar);
+router.delete('/:id',
+  // #swagger.tags = ['Cars']
+  carsController.deleteCar
+);
 
 module.exports = router;

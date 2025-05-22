@@ -20,6 +20,26 @@ const saveCar = (req, res, next) => {
   });
 };
 
+const saveStore = (req, res, next) => {
+  const validationRule = {
+    name: 'required|string',
+    employee_num: 'required|integer',
+    address: 'required|string',
+  };
+  validator(req.body, validationRule, {}, (err, status) => {
+    if (!status) {
+        return res.status(412).send({
+        success: false,
+        message: 'Validation failed',
+        data: err
+      });
+    } else {
+      next();
+    }
+  });
+};
+
 module.exports = {
-  saveCar
+  saveCar,
+  saveStore
 };
