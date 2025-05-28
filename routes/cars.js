@@ -3,6 +3,7 @@ const router = express.Router();
 
 const carsController = require('../controllers/cars');
 const validation = require('../middleware/validate');
+const { isAuthenticated } = require("../middleware/authenticate");
 
 router.get('/',
   // #swagger.tags = ['Cars']
@@ -16,18 +17,21 @@ router.get('/:id',
 
 router.post('/',
   // #swagger.tags = ['Cars']
+  isAuthenticated,
   validation.saveCar,
   carsController.createCar
 );
 
 router.put('/:id',
   // #swagger.tags = ['Cars']
+  isAuthenticated,
   validation.saveCar,
   carsController.updateCar
 );
 
 router.delete('/:id',
   // #swagger.tags = ['Cars']
+  isAuthenticated,
   carsController.deleteCar
 );
 
