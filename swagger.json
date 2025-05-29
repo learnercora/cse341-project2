@@ -5,9 +5,10 @@
     "description": "CSE341 Project2 API",
     "version": "1.0.0"
   },
-  "host": "cse341-project2-fi1e.onrender.com",
+  "host": "localhost:8080",
   "basePath": "/",
   "schemes": [
+    "http",
     "https"
   ],
   "paths": {
